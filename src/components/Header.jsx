@@ -1,7 +1,7 @@
 const Header = ({ filtrarProdutos, pesquisarProdutos, ordenarProdutos }) => {
     return (
-        <header className="flex items-center justify-between px-8 py-4 bg-orange-500">
-            <div>
+        <header className="lg:flex items-center justify-between px-4 lg:px-15 py-4 bg-orange-500">
+            <div className="mb-4 md:mb-0">
                 <input
                     type="text"
                     placeholder="Digite o nome do produto"
@@ -9,7 +9,7 @@ const Header = ({ filtrarProdutos, pesquisarProdutos, ordenarProdutos }) => {
                     className="w-80 md:w-120 h-10 rounded bg-white px-4 text-gray-800 outline-none focus:ring-2 focus:ring-orange-300"
                 />
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 w-full lg:w-auto">
                 <select
 
                     defaultValue=""

@@ -42,8 +42,8 @@ const App = () => {
   return (
     <>
       <Header filtrarProdutos={filtrarProdutos} pesquisarProdutos={pesquisarProdutos} />
-      <main className="p-15 bg-slate-200">
-        <div className="grid grid-cols-4 gap-4">
+      <main className="p-4 lg:p-15 bg-slate-200">
+        <div className="grid lg:grid-cols-4 gap-4">
           {produtosExibidos.map((produto) => (
             <Card
               key={produto.id}
