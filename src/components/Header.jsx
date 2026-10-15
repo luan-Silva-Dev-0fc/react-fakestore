@@ -1,6 +1,7 @@
 const Header = ({ filtrarProdutos, pesquisarProdutos, ordenarProdutos }) => {
     return (
-        <header className="flex flex-col lg:flex-row items-center justify-between gap-4 px-4 sm:px-8 lg:px-15 py-4 bg-orange-500 shadow-md">
+        <header className="flex flex-col lg:flex-row items-center justify-between gap-4 px-4 sm:px-8 lg:px-15 py-4 bg-linear-to-r from-orange-500 via-amber-500 to-rose-500 animate-gradient shadow-md">
+            {/* Gradiente animado: altere as cores (from / via / to) aqui */}
             <div className="w-full lg:w-auto">
                 <input
                     type="text"
