@@ -27,6 +27,13 @@ const App = () => {
     }
   }
 
+  function pesquisarProdutos(termo) {
+    let produtosFiltrados = produtos.filter((produto) => {
+      return produto.title.toLowerCase().includes(termo.toLowerCase());
+    });
+    setProdutosExibidos(produtosFiltrados);
+  }
+
   useEffect(() => {
     buscarProdutos();
   }, [])
@@ -34,7 +41,7 @@ const App = () => {
 
   return (
     <>
-      <Header filtrarProdutos={filtrarProdutos} />
+      <Header filtrarProdutos={filtrarProdutos} pesquisarProdutos={pesquisarProdutos} />
       <main className="p-15 bg-slate-200">
         <div className="grid grid-cols-4 gap-4">
           {produtosExibidos.map((produto) => (
@@ -51,15 +58,7 @@ const App = () => {
           ))}
 
         </div>
-        <Card
-          title={"titulo"}
-          image={"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png"}
-          category={"teste"}
-          price={10}
-          rate={4}
 
-
-        />
       </main>
 
     </>

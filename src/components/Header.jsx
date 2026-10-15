@@ -6,7 +6,7 @@ const Header = ({ filtrarProdutos, pesquisarProdutos, ordenarProdutos }) => {
                     type="text"
                     placeholder="Digite o nome do produto"
                     onChange={(e) => pesquisarProdutos?.(e.target.value)}
-                    className="w-80 md:w-120 h-10 rounded bg-white px-4 text-gray-800 placeholder:text-gray-400 outline-none focus:ring-2 focus:ring-orange-300"
+                    className="w-80 md:w-120 h-10 rounded bg-white px-4 text-gray-800 outline-none focus:ring-2 focus:ring-orange-300"
                 />
             </div>
             <div className="flex items-center gap-4">
