@@ -1,6 +1,6 @@
 const Header = ({ filtrarProdutos, pesquisarProdutos, ordenarProdutos }) => {
     return (
-        <header className="flex flex-col lg:flex-row items-center justify-between gap-4 px-4 sm:px-8 lg:px-15 py-4 bg-linear-to-r from-orange-500 via-amber-500 to-rose-500 animate-gradient shadow-md">
+        <header className="flex flex-col lg:flex-row items-center justify-between gap-4 px-4 sm:px-8 lg:px-15 py-4 bg-linear-to-r from-[oklch(29.3%_0.136_325.661)] via-[oklch(29.3%_0.136_325.661)] to-[oklch(29.1%_0.149_302.717)] animate-gradient shadow-md">
             {/* Gradiente animado: */}
             <div className="w-full lg:w-auto">
                 <input
